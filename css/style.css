@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #D9D9D9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.retangulo {
+	width: 100%;
+	height: 368px;
+	background-color: #121214;
+	display: flex;
+  	align-items: center;
+}
+
+.conteudo-topo {
+  margin-left: 352px;
+}
+.titulo-evento {
+	font-family: 'Archivo', sans-serif;
+	font-weight: 700; 
+	font-size: 36px;
+	line-height: 42px; 
+	color: #FFFFFF;
+	width: 319px;
+	height: 84px;
+	margin-bottom: 16px; 
+}
+
+.subtitulo-evento {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700; 
+	font-size: 16px;
+	line-height: 26px;
+	color: #42D3FF;
+	width: 288px;
+	height: 52px;
+}
+
+.formulario {
+	width: 736px;
+	background-color: #FAFAFC;
+
+	margin: -80px auto 1px auto;
+
+	margin-left: 352px;
+	padding: 80px 40px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.input {
+	margin-bottom: 40px;
+	width: 100%;
+	border-radius: 5px;
+	outline: 0;
+	border: 1px solid gray;
+	padding: 20px;
+}
+
+.inputcaixa2 {
+	margin-bottom: 40px;
+	width: 100%;
+	border-radius: 5px;
+	outline: 0;
+	border: 1px solid gray;
+	padding: 90px;
+}
+
+.topo {
+	font-family:'Archivo', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 34px;
+	color: #32264D;
+	width: 256px;
+	height: 34px;
+}
+
+.separador {
+	margin-bottom: 20px;
+	margin-top: 11px;
+}
+
+.minititulo {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #4E4958;
+	width: 112px;
+	height: 24px;
+}
+
+label > span {
+	color: #C1BCCc;
+}
+
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  color: #1e293b; /* Cor do texto */
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 36px;
+	margin-top: 11px;
+}
+
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 2px solid #cbd5e1; 
+  border-radius: 6px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+
+.checkbox-container input:checked ~ .custom-checkbox {
+  background-color: #ffffff; 
+}
+
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 5px;
+  height: 10px;
+  border: solid #42D3FF;
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg);
+  margin-bottom: 2px; 
+}
+
+
+.checkbox-container input:checked ~ .custom-checkbox::after {
+  display: block;
+}
+
+
+.checkbox-container input:focus-visible ~ .custom-checkbox {
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+
+.horarios {
+  display: flex;
+  gap: 16px;          
+  align-items: flex-start;
+  width: 100%;
+}
+
+
+.campo-grupo {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;           
+}
+
+
+.grupo-data {
+  flex: 2;            
+}
+
+.grupo-hora {
+  flex: 1;            
+}
+
+
+.campo-grupo input {
+  width: 100%;
+  height: 40px;       
+  padding: 8px 12px;
+  border: 1px solid #D6D6D6; 
+  border-radius: 4px;
+  font-family: inherit;
+  color: #333333;
+  box-sizing: border-box;
+}
+
+.campo-grupo input::placeholder {
+  color: #BFBFBF;
+}
+
+
+.rodape-formulario {
+  background-color: #F0F0F0; 
+  padding: 32px 24px;       
+  display: flex;
+  margin-left: 352px;
+  margin-top: 0px;
+  border-radius: 0 0 8px 8px; 
+  border: 1px solid #D6D6D6;
+  width: 736px;
+}
+
+
+.btn-salvar-visual {
+  background-color: #04D361; 
+  color: #FFFFFF;            
+  font-family: sans-serif;  
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+  width: 100%;               
+  height: 52px;              
+  border-radius: 10px;       
+}
